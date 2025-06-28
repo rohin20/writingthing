@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Flexoki Light Theme */
+    --background: 60 9% 98%; /* flexoki-paper */
+    --foreground: 30 3% 6%; /* flexoki-black */
+    
+    --card: 60 9% 98%; /* flexoki-paper */
+    --card-foreground: 30 3% 6%; /* flexoki-black */
+    
+    --popover: 60 9% 98%; /* flexoki-paper */
+    --popover-foreground: 30 3% 6%; /* flexoki-black */
+    
+    --primary: 210 100% 35%; /* flexoki-blue */
+    --primary-foreground: 60 9% 98%; /* flexoki-paper */
+    
+    --secondary: 60 6% 90%; /* flexoki-100 */
+    --secondary-foreground: 30 3% 6%; /* flexoki-black */
+    
+    --muted: 60 6% 90%; /* flexoki-100 */
+    --muted-foreground: 30 8% 40%; /* flexoki-700 */
+    
+    --accent: 60 6% 90%; /* flexoki-100 */
+    --accent-foreground: 30 3% 6%; /* flexoki-black */
+    
+    --destructive: 4 90% 40%; /* flexoki-red */
+    --destructive-foreground: 60 9% 98%; /* flexoki-paper */
+    
+    --border: 60 6% 85%; /* flexoki-150 */
+    --input: 60 6% 85%; /* flexoki-150 */
+    --ring: 210 100% 35%; /* flexoki-blue */
+    
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Flexoki Dark Theme */
+    --background: 30 3% 6%; /* flexoki-black */
+    --foreground: 60 6% 90%; /* flexoki-100 */
+    
+    --card: 30 4% 10%; /* flexoki-950 */
+    --card-foreground: 60 6% 90%; /* flexoki-100 */
+    
+    --popover: 30 4% 10%; /* flexoki-950 */
+    --popover-foreground: 60 6% 90%; /* flexoki-100 */
+    
+    --primary: 210 100% 65%; /* flexoki-blue-light */
+    --primary-foreground: 30 3% 6%; /* flexoki-black */
+    
+    --secondary: 30 4% 15%; /* flexoki-900 */
+    --secondary-foreground: 60 6% 90%; /* flexoki-100 */
+    
+    --muted: 30 4% 15%; /* flexoki-900 */
+    --muted-foreground: 60 4% 70%; /* flexoki-300 */
+    
+    --accent: 30 4% 15%; /* flexoki-900 */
+    --accent-foreground: 60 6% 90%; /* flexoki-100 */
+    
+    --destructive: 4 90% 60%; /* flexoki-red-light */
+    --destructive-foreground: 30 3% 6%; /* flexoki-black */
+    
+    --border: 30 4% 20%; /* flexoki-850 */
+    --input: 30 4% 20%; /* flexoki-850 */
+    --ring: 210 100% 65%; /* flexoki-blue-light */
+  }
+
+  a {
+    @apply transition-colors duration-150;
+  }
+  a:hover {
+    @apply text-flexokiGreen;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
